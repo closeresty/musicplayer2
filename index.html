@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player 2</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+   <div class="player">
+     <div class="player__controls">
+       <div class="player__btn player__btn--small" id="previous">
+         <i class="fas fa-arrow-left"></i>
+       </div>
+       <h5 class="player__title">Album 04</h5>
+       <div class="player__btn player__btn--small" id="icon-menu">
+         <i class="fas fa-bars"></i>
+       </div>
+     </div>
+     <div class="player__album">
+       <img src="./images.jpg" alt="images">
+     </div>
+
+     <h2 class="player__artist">24 Bars Challenge</h2>
+     <h3 class="player__song">Ez Mil</h3>
+
+     <input type="range" value="20" min="0" class="player__level" id="range" />
+     <div class="audio-duration">
+       <div class="start">00:00</div>
+       <div class="end">03:27</div>
+     </div>
+
+     <audio class="player__audio" controls id="audio">
+       <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Leo%20-%20Trying.mp3" type="audio/mpeg" />
+     </audio>
+
+     <div class="player__controls">
+       <div class="player__btn player__btn--medium" id="backward">
+         <i class="fas fa-backward"></i>
+       </div>
+
+       <div class="player__btn player__btn--medium blue play" id="play">
+         <i class="fas fa-play play-btn"></i>
+         <i class="fas fa-pause pause-btn hide"></i>
+       </div>
+
+       <div class="player__btn player__btn--medium" id="forward">
+         <i class="fas fa-forward"></i>
+       </div>
+     </div>
+   </div>
+ </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
